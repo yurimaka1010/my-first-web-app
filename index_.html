@@ -1,0 +1,385 @@
+<!doctype html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+        <title>
+            C4D Quickstart Dialog
+        </title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../../../css/bootstrap.min.4.2.1.css">
+        <!-- My CSS -->
+        <link rel="stylesheet" href="../../../css/quickstart-style.css">
+    </head>
+    
+    <body>
+        <aside>
+            <img src="../../../img/c4d-logo-white.png" alt="Cinema 4D by Maxon logo">
+            <div class="button-container">
+                <a class="buttonlink hiddenanchor" href="12094" data-c4d_cmd="callcommand" data-c4d_close="true"><button class="button">Neu</button></a>
+                <a class="buttonlink hiddenanchor" href="12095" data-c4d_cmd="callcommand" data-c4d_close="true"><button class="button">Öffnen</button></a>
+            </div>
+            <div id="recent" class="dropdown-container">
+                <h1 class="dropdown">
+                    LETZTE
+                </h1>
+                <hr>
+                <ul id="recentList">
+                    <a class="hiddenanchor" href="__recent0" data-c4d_cmd="open" data-c4d_close="true" data-toggle="tooltip" data-placement="top" data-container="aside" title="recent0"><li id="recent0">recent0</li></a>
+                    <a class="hiddenanchor" href="__recent1" data-c4d_cmd="open" data-c4d_close="true" data-toggle="tooltip" data-placement="top" data-container="aside" title="recent0"><li id="recent1">recent0</li></a>
+                    <a class="hiddenanchor" href="__recent2" data-c4d_cmd="open" data-c4d_close="true" data-toggle="tooltip" data-placement="top" data-container="aside" title="recent0"><li id="recent2">recent0</li></a>
+                    <a class="hiddenanchor" href="__recent3" data-c4d_cmd="open" data-c4d_close="true" data-toggle="tooltip" data-placement="top" data-container="aside" title="recent0"><li id="recent3">recent0</li></a>
+                    <a class="hiddenanchor" href="__recent4" data-c4d_cmd="open" data-c4d_close="true" data-toggle="tooltip" data-placement="top" data-container="aside" title="recent0"><li id="recent4">recent0</li></a>
+                    <a class="hiddenanchor" href="__recent5" data-c4d_cmd="open" data-c4d_close="true" data-toggle="tooltip" data-placement="top" data-container="aside" title="recent0"><li id="recent5">recent0</li></a>
+                    <a class="hiddenanchor" href="__recent6" data-c4d_cmd="open" data-c4d_close="true" data-toggle="tooltip" data-placement="top" data-container="aside" title="recent0"><li id="recent6">recent0</li></a>
+                    <a class="hiddenanchor" href="__recent7" data-c4d_cmd="open" data-c4d_close="true" data-toggle="tooltip" data-placement="top" data-container="aside" title="recent0"><li id="recent7">recent0</li></a>
+                    <a class="hiddenanchor" href="__recent8" data-c4d_cmd="open" data-c4d_close="true" data-toggle="tooltip" data-placement="top" data-container="aside" title="recent0"><li id="recent8">recent0</li></a>
+                    <a class="hiddenanchor" href="__recent9" data-c4d_cmd="open" data-c4d_close="true" data-toggle="tooltip" data-placement="top" data-container="aside" title="recent0"><li id="recent9">recent0</li></a>
+                    <a href="#" id="loadMore">... mehr ...</a>
+                    <a href="#" id="showLess">... weniger ...</a>
+                </ul>
+            </div>
+            <div id="template" class="dropdown-container">
+                <h1 class="dropdown">
+                    VORLAGE
+                    <a href="#templateList" data-toggle="collapse"><span class="glyphicon glyphicon-menu-down"></span></a>
+                </h1>
+                <hr>
+                <ul id="templateList">
+                    <a class="hiddenanchor" href="__templateProduct" data-c4d_cmd="open" data-c4d_close="true"><li>Produktdesign</li></a>
+                </ul>
+            </div>
+            <!-- OFFLINE CAN'T VISIT HELP PAGES, SO HIDING BUTTON
+            <div class="help">
+                <a href="https://www.maxon.net/en/support/how-can-we-help/" target="_blank">
+                <img class="icon" src="../../../img/help-icon.png" alt="Get Help icon">
+                </a>
+            </div>
+            -->
+        </aside>
+        <main>
+            <section class="top">
+                <article class="inspiration">
+                    <h1>
+                        Inspiration
+                    </h1>
+                    <div id="createCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#createCarousel" data-slide-to="0" class="active">
+                            </li>
+                            <li data-target="#createCarousel" data-slide-to="1">
+                            </li>
+                            <li data-target="#createCarousel" data-slide-to="2">
+                            </li>
+                            <li data-target="#createCarousel" data-slide-to="3">
+                            </li>
+                            <li data-target="#createCarousel" data-slide-to="4">
+                            </li>
+                            <li data-target="#createCarousel" data-slide-to="5">
+                            </li>
+                            <li data-target="#createCarousel" data-slide-to="6">
+                            </li>
+                            <li data-target="#createCarousel" data-slide-to="7">
+                            </li>
+                            <li data-target="#createCarousel" data-slide-to="8">
+                            </li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carousel-item-block">
+                                    <img class="image-link" src="../../../img/inspiration/Aaron_Martinez.png" alt="Inspiration of the Day">
+                                    <div class="caption">
+                                        <h2>
+                                            Aaron Martinez
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-item-block">
+                                    <img class="image-link" src="../../../img/inspiration/Antonio_Saccomanno.png" alt="Inspiration of the Day">
+                                    <div class="caption">
+                                        <h2>
+                                            Antonio Saccomanno
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-item-block">
+                                    <img class="image-link" src="../../../img/inspiration/Beeple.png" alt="Inspiration of the Day">
+                                    <div class="caption">
+                                        <h2>
+                                            Beeple
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-item-block">
+                                    <img class="image-link" src="../../../img/inspiration/Cornelius_Dammrich.png" alt="Inspiration of the Day">
+                                    <div class="caption">
+                                        <h2>
+                                            Cornelius Dammrich
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-item-block">
+                                    <img class="image-link" src="../../../img/inspiration/Beeple-1.png" alt="Inspiration of the Day">
+                                    <div class="caption">
+                                        <h2>
+                                            Beeple
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-item-block">
+                                    <img class="image-link" src="../../../img/inspiration/Daniel_Linard.png" alt="Inspiration of the Day">
+                                    <div class="caption">
+                                        <h2>
+                                            Daniel Linard
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-item-block">
+                                    <img class="image-link" src="../../../img/inspiration/Exorbitart.png" alt="Inspiration of the Day">
+                                    <div class="caption">
+                                        <h2>
+                                            Exorbitart
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-item-block">
+                                    <img class="image-link" src="../../../img/inspiration/Florian_Renner.png" alt="Inspiration of the Day">
+                                    <div class="caption">
+                                        <h2>
+                                            Florian Renner
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-item-block">
+                                    <img class="image-link" src="../../../img/inspiration/Joe_Yan.png" alt="Inspiration of the Day">
+                                    <div class="caption">
+                                        <h2>
+                                            Joe Yan
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                </article>
+                <article class="whats-new">
+                    <h1 id="whats-new-header">
+                        WAS GIBT'S NEUES?
+                    </h1>
+                    <div class="image-link">
+                        <img id="whats-new-image" src="../../../img/new-default.png" alt="Post of the day">
+                    </div>
+                    <div class="whats-new-text">
+                        <h3 id="whats-new-headline">
+                            Neueste Nachrichten
+                        </h3>
+                        <p id="whats-new-text">
+                            Aktuelle Informationen und Veranstaltungshinweise gibt es auf maxon.net.
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <section class="bottom">
+                <article class="tutorials">
+                    <h1><a href="https://www.cineversity.com/" target="_blank">Cineversity Tutorials</a></h1>
+                    <div class="cv-text">
+                        <h5>Tolle Cinema 4D-Tutorials und Ressourcen<br>gibt es auf
+                        </h5>
+                    </div>
+                    <div class="image-link">
+                        <img src="../../../img/cineversity_offline.png" alt="Cineversity">
+                    </div>
+                </article>
+                <div class="dlgOptions">
+                     <div class="dlgOptionsOption">Beim Programmstart anzeigen <input type="checkbox" id="enabled"></div>
+                     <div class="dlgOptionsOption">Neue Features hervorheben <input type="checkbox" id="highlight"></div>
+                </div>
+            </section>
+        </main>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="../../../js/libs/jquery-3.3.1.min.js">
+        </script>
+        <script src="../../../js/libs/popper-1.14.6.min.js">
+        </script>
+        <script src="../../../js/libs/bootstrap-4.2.1.min.js">
+        </script>
+        <script src="../../../js/c4dlink.js">
+        </script>
+        <script>
+        function getUrlVars() {
+            var vars = [], hash;
+            var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+            for(var i = 0; i < hashes.length; i++)
+            {
+                hash = hashes[i].split('=');
+                vars.push(hash[0]);
+                vars[hash[0]] = hash[1];
+            }
+            return vars;
+        }
+        
+        function updateScale() {
+            var baseSize = {
+                w: 1100,
+                h: 740
+                }
+
+            var ww = $(window).width();
+            var wh = $(window).height();
+            var newScale = 1;
+
+            // compare ratios
+            if(ww/wh < baseSize.w/baseSize.h) { // tall ratio
+                newScale = ww / baseSize.w;
+            } else { // wide ratio
+                newScale = wh / baseSize.h;
+            }
+
+            $('body').css('transform', 'scale(' + newScale + ',' +  newScale + ')');
+            $('body').css('visibility', 'visible');
+        }
+
+        $(document).ready(function () {
+            
+            var qs = getUrlVars();
+            if(qs['type']=='edu' || qs['type']=='trial' || qs['type']=='lite') {
+                $('#whats-new-header').text("WAS KOMMT ALS NÄCHSTES?");
+                $('#whats-new-headline').text("Jetzt kaufen und sparen");
+                $('#whats-new-image').attr('src','../../../img/new-deal.png');
+                $('#whats-new-text').text("Günstige Monats- und Jahrespreise sind verfügbar. Weitere Informationen gibt es auf maxon.net.");
+            }
+
+            
+            updateScale();
+
+            var recentList = c4dlink.getRecentlList();
+
+            for (i = 0; i < 10; i++) {
+                if(i<recentList.length) {
+                    $('#recent' + i).attr("title",recentList[i]);
+					$('#recent' + i).html(recentList[i]);
+                } else {
+                    $('#recent' + i).remove();
+                }
+            }
+
+            $('#recentList li:lt(5)').show();
+            $('#showLess').hide();
+            
+            var items =  recentList.length;
+            var shown =  5;
+            
+			if(qs['type']=='lite') {
+				$('#recentList li:lt(10)').show();
+				$('#template').hide();
+				shown = 10;
+			}
+			
+            if(items > shown) {
+                $('#loadMore').show();
+            } else {
+                $('#loadMore').hide();
+            }
+            
+            $('#loadMore').click(function () {
+                $('#showLess').show();
+                shown = $('#recentList li:visible').length+5;
+                if(shown< items) {
+                    $('#recentList li:lt('+shown+')').show();
+                } else {
+                    $('#recentList li:lt('+items+')').show();
+                    $('#loadMore').hide();
+                }
+                $('#template').hide();
+            });
+            
+            $('#showLess').click(function () {
+                $('#recentList li').not(':lt(5)').hide();
+                $('#loadMore').show();
+                $('#showLess').hide();
+                $('#template').show();
+            });
+            
+            c4dlink.checkUpdate(function(data){
+                if(Number(data.updateID) > Number(c4dlink.getVersion()))
+                {
+                    var updateVersion = String(data.updateID);
+                    updateVersion = updateVersion.substr(0, 2) + "." + updateVersion.substr(2);
+                    var updateOverlayDiv = $('<div class="updateOverlay"><div class="updateInfo">Update available: ' + updateVersion + '</div><a href="' + data.updateURL + '" target="_blank"><button class="button updateButton">Download update!</button></a></div>');
+                    $("body").prepend(updateOverlayDiv);
+                    c4dlink.convertLinks();
+                }
+            });
+            
+            c4dlink.checkLanguages(function(data){            
+                var languageOverlayDiv = $('<div class="languageOverlay"><div class="languageInfo">Available language packs:</div><div class="languageList"></div></div>');
+                $("aside").prepend(languageOverlayDiv)
+                
+                for(var i = 0; i < data.languages.length; i++)
+                {
+                    var languageDL = $('<a href="' + data.languages[i].url + '" target="_blank">' + data.languages[i].name.toUpperCase() + '</a>');
+                    $(".languageList").append(languageDL);
+                }
+                c4dlink.convertLinks();
+            });        
+        });
+
+        $(window).resize(updateScale);
+
+            
+        $('#inspCarousel').carousel({
+            interval: 5000
+        })
+        $('.carousel .carousel-item').each(function() {
+            var next = $(this).next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));                
+            for (var i = 0; i < 3; i++) {
+                next = next.next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+                next.children(':first-child').clone().appendTo($(this));
+            }
+        });
+        
+        $("#enabled").prop("checked", c4dlink.getEnabled());
+        $("#highlight").prop("checked", c4dlink.getHighlight());
+        
+        $("#enabled").change(function (e) {
+            e.preventDefault();
+            c4dlink.enable($("#enabled").prop("checked"));
+        });
+        
+        $("#highlight").change(function (e) {
+            e.preventDefault();
+            c4dlink.highlight($("#highlight").prop("checked"));
+        });
+        </script>
+        <script src="../../../js/quickstartdialog.js">
+        </script>
+    </body>
+
+</html>
